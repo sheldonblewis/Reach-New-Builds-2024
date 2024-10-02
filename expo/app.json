@@ -1,0 +1,62 @@
+{
+	"expo": {
+		"name": "Reach",
+		"slug": "Reach",
+		"scheme": "expo-supabase-starter",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/logo.png",
+		"userInterfaceStyle": "automatic",
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"config": {
+				"usesNonExemptEncryption": false
+			},
+			"splash": {
+				"image": "./assets/splash-reach.png",
+				"resizeMode": "cover",
+				"backgroundColor": "#ffffff",
+				"dark": {
+					"backgroundColor": "#000000",
+					"resizeMode": "cover",
+					"image": "./assets/splash-reach.png"
+				}
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png"
+			},
+			"splash": {
+				"image": "./assets/splash.png",
+				"resizeMode": "cover",
+				"backgroundColor": "#ffffff",
+				"dark": {
+					"backgroundColor": "#000000",
+					"resizeMode": "cover",
+					"image": "./assets/splash-dark.png"
+				}
+			}
+		},
+		"experiments": {
+			"typedRoutes": true
+		},
+		"plugins": [
+			"expo-router",
+			"expo-secure-store",
+			[
+				"expo-location",
+				{
+					"locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+				}
+			],
+			[
+				"expo-camera",
+				{
+					"cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+				}
+			]
+		]
+	}
+}

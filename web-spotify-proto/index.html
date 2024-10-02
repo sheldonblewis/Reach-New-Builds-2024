@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Spotify Profile</title>
+  <script src="src/script2.ts" type="module"></script>
+</head>
+
+<body>
+  <h1>Display your Spotify profile data</h1>
+
+  <a href="http://localhost:8787/spotify/auth">auth</a>
+
+  <section id="profile">
+    <h2>Logged in as <span id="displayName"></span></h2>
+    <ul>
+      <li>User ID: <span id="id"></span></li>
+      <li>Email: <span id="email"></span></li>
+    </ul>
+  </section>
+
+  <section id="genreSelection">
+    <h2>Select Genre</h2>
+    <select id="genreSelect">
+      <option value="">Select a genre</option>
+    </select>
+  </section>
+
+  <section id="artistsDisplay">
+    <h2>Artists in Selected Genre</h2>
+    <div id="artistsContainer"></div>
+  </section>
+
+  <section id="player">
+    <h2>Music Player</h2>
+    <button id="playButton">Play</button>
+    <button id="nextButton">Next</button>
+    <div id="nowPlaying"></div>
+  </section>
+</body>
+
+</html>
